@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Site de Loterie</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #0a2540, #1c64f2);
+      color: white;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+    nav a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+    }
+    .hero {
+      text-align: center;
+      padding: 80px 20px 40px;
+    }
+    .hero h1 {
+      font-size: 2.5em;
+    }
+    .countdown {
+      font-size: 1.8em;
+      margin: 20px 0;
+    }
+    .play-button {
+      background-color: gold;
+      color: black;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+    .steps, .winners {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .steps div, .winners li {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      margin: 10px 0;
+      border-radius: 10px;
+    }
+    .winners ul {
+      list-style: none;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>LOTTERIE</h1>
+    <nav>
+      <a href="#">Accueil</a>
+      <a href="#">Comment jouer</a>
+      <a href="#">Résultats</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Jouez et tentez votre chance de gagner gros !</h1>
+    <p class="countdown">Prochain tirage dans : <span id="timer">02:14:36</span></p>
+    <button class="play-button">Jouer maintenant</button>
+  </section>
+
+  <section class="steps">
+    <div><strong>1. Créez un compte</strong> - Inscrivez-vous rapidement pour participer.</div>
+    <div><strong>2. Choisissez vos numéros</strong> - Sélectionnez vos chiffres préférés.</div>
+    <div><strong>3. Attendez le tirage</strong> - Découvrez si vous avez gagné !</div>
+  </section>
+
+  <section class="winners">
+    <h2>Derniers gagnants</h2>
+    <ul>
+      <li>⭐ Anonyme - 1 000 €</li>
+      <li>⭐ J.D. - 500 €</li>
+      <li>⭐ M.L. - 250 €</li>
+    </ul>
+  </section>
+</body>
+</html>
